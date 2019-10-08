@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>STYLiSH</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/profile.css">
+    
+
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div class="container">
+
+            <!-- <div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="false"
+            data-auto-logout-link="true" data-use-continue-as="false" data-scope="public_profile,email" data-onlogin="checkLoginState();"></div> -->
+
+
+            <div class="header1">
+                <a href="./index.html" class="logo"><img src="images/logo.png" alt="#"></a>
+
+
+                <ul class="menu" id="category-nav">
+                    <li id="CateWomen" style="border-right: 1px solid black"><a href="./index.html?category=women">女裝</a></li>
+                    <li id="CateMen" style="border-right: 1px solid black"><a href="./index.html?category=men">男裝</a></li>
+                    <li id="CateAccessories"><a href="./index.html?category=accessories">配件</a></li>
+                </ul>
+
+
+            </div>
+
+
+            <div class="header2">
+                <div class="searchbar">
+                    <!-- 網頁版搜尋列 -->
+                    <input id="inputKeyword" class="webSearchInput searchInput" type="text" name="search">
+                    <!-- 點擊放大鏡長出來的搜尋 -->
+                    <div class="mobileSearchBar"></div>
+                    <a href="#"><img class="btnSearch pureSearch searchBtn" src="images/search.png" alt=""></a>
+                    <a href="./cart.html" class="icon-1"><img class="cart-icon" src="images/cart.png" alt="#" style="height: 44px; width: 44px;">
+                        <div class="cartNumNav">1</div>
+                    </a>
+                    <a href="./profile.html" class="icon-1"><img class="memerLogin" src="images/btn-member-01-normal.svg" alt="#" style="height: 44px; width: 44px;">
+                    </a>
+                    目前狀態：<span id="FB_STATUS_1"></span>
+                    
+                </div>
+            </div>
+            <!-- 手機版搜尋鈕   -->
+            <a href="#" class="icon openSearchBar mobileSearch"><img src="images/search.png" alt=""></a>
+        </div>
+        <!-- 手機版搜尋列 -->
+        <!-- <div class="mobileSearchBar">
+        <input type="text" class="moSearchInput searchInput">
+        <input type="button" class="searchBtn searchText">
+        <button class="close-btn">&times;</button>
+    </div> -->
+
+        <!-- 手機版menu -->
+        <div class="mobile">
+            <ul class="mobile-menu">
+                <li id="MoCateWomen" style="border-right: 1px solid #ffffff"><a href="./index.html?category=women">女裝</a></li>
+                <li id="MoCateMen" style="border-right: 1px solid #ffffff"><a href="./index.html?category=men">男裝</a></li>
+                <li id="MoCateAccessories"><a href="./index.html?category=accessories">配件</a></li>
+            </ul>
+        </div>
+
+        <!-- facebook登入後個人資料 -->
+        
+        <div class="profileMain">
+            <div id="login" class="suqre">
+                <h2 class="profileTitle">Member Profile Login</h2>
+                    <div class="fbButton1">
+                        <div class="fb-login-button" data-max-rows="1" data-button-type="login_with" data-show-faces="false"
+                        data-auto-logout-link="false" data-use-continue-as="false" data-size="large" data-width="200" data-scope="public_profile,email," data-onlogin="checkLoginState();"></div> 
+                   </div>
+            </div>
+
+            <div id="profile" class="suqre">
+                <h2 class="profileTitle">Member Profile</h2>
+                <div class="fbButton1">
+                    <div class="FB-pitcure" id="FB-picture"></div>
+                    <p class="FBname">姓名 ｜ <span id="FB-name"></span></p>
+                    <p class="FBmail">Email ｜ <span id="FB-mail""></span></p>
+                    <button id="FB_logout" class="btn-logout" onclick="fbLogout();">登出</button>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+            <div class="footer-menu">
+                <ul class="info">
+                    <li><a href="#">關於 Stylish</a></li>
+                    <li><a href="#">服務條款</a></li>
+                    <li><a href="#">隱私政策</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                    <li id="no-line" style="border-right: 0px;"><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <ul class="social-media">
+                    <li><a href="#"> <img class="mediaIcon" src="images/line.png" alt=""> </a></li>
+                    <li><a href="#"> <img class="mediaIcon" src="images/twitter.png" alt=""> </a></li>
+                    <li><a href="#"> <img class="mediaIcon" src="images/facebook.png" alt=""> </a></li>
+                </ul>
+                <p class="copyright">© 2018. All rights reserved.</p>
+            </div>
+        </div>
+
+        <div>
+            <p class="copy-r">© 2018. All rights reserved.</p>
+        </div>
+
+        <div class="shopping">
+            <div class="shopping-cart"><a href="./cart.html"><img class="cart-icon-mobile" src="images/btn-shopping-cart-02-normal.svg"
+                        alt=""></a>
+                <p>購物車</p>
+                <div class="cartNum"></div>
+            </div>
+            <div class= ><a class=" " href="./profile.html"><img class="mobileMemberIcon" src="images/btn-member-02-normal.svg" alt="">
+                <p>會員</p></a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    
+    <script src="JavaScript/facebooklogin.js"></script>
+    <Script src="JavaScript/product_detalis.js"></Script>
+    <script src ="JavaScript/profile.js"></script>
+</body>
+
+</html>

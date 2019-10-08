@@ -1,0 +1,41 @@
+
+
+.thankContent{
+    /* width: 80%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.thankyouSub h2{
+    font-family: "NotoSansCJKtc";
+    font-size: 72px;
+    text-align: center;
+}
+
+.thankyouSub p{
+    font-family: "NotoSansCJKtc";
+    text-align: center;
+    /* font-size: 20px;     */
+    margin-top: 40px;
+}
+
+.goBack{
+    width: 25%;
+    height: 50px;
+    font-family: "NotoSansCJKtc";
+    font-size: 28px;
+    border: solid 1px #979797;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.thankButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

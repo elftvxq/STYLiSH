@@ -1,0 +1,626 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.container{
+    border-bottom: 40px solid #313538;
+}
+
+.cart-main{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cartAll{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cartTitleAll{
+    width: 100%;
+    height: 20px;
+    margin-top: 117px;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.cartTitle1, .itemInfo{
+    width: 45%;
+}
+
+.cartTitle, .itemDelete, .itemQty, .itemPrice, .itemSubtotal{
+    width: 15%;
+}
+
+.itemDelete{
+  
+}
+
+
+.listMain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: solid 1px #979797;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.mobileItem, .mobileItemDtails{
+    display: none;
+}
+
+.shoppingItem{
+    display: flex;
+    width: 1160px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    }
+
+
+.listMain p{
+    font-family: NotoSansCJKtc;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3f3a3a;
+}
+
+.itemInfo{
+    display: flex;
+
+}
+
+.itemPic{
+    width: 114px;
+    /* height: 151.5px; */
+}
+
+.itemDetail{
+    width: 80%;
+}
+
+.itemDetail1{
+    height: 10%;
+    margin-left: 18px;
+    margin-bottom: 10px;
+}
+
+.itemDetail2{
+    height: 12%;
+    width: 100%;
+    margin-left: 18px;
+    padding-top: 10px;
+  
+}
+
+.itemTitle, .itemid{
+    padding-bottom: 10px;
+}
+
+.itemInfo, .itemQty, .itemPrice, .itemSubtotal, .itemDelete{
+    display: flex;
+    align-items: center;
+}
+
+.delivery{
+    width: 100%;
+    height: auto;
+    background-color: #e8e8e8;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sendCountry{
+    display: flex;
+    align-items: center;
+    font-family: "NotoSansCJKtc";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3f3a3a;
+}
+
+.sendCountry p, .paymentWay p{
+    margin-right: 20px;
+}
+
+.delivery-1,.delivery-2{
+    width: 171px;
+    height: 30px;
+    border-radius: 8px;
+    border: solid 1px #979797;
+    background-color: #f3f3f3;
+}
+
+.paymentWay{
+    display: flex;
+    align-items: center;
+    font-family: "NotoSansCJKtc";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3f3a3a;
+    margin-left: 50px;
+}
+
+.notice{
+    width: 100%;
+    height: 78px;
+    font-family: NotoSansCJKtc;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3f3a3a;
+    margin-top: 20px;
+}
+
+.line{
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #3f3a3a;
+}
+
+.orderInfo{
+    width: 100%;
+    margin-top: 50px;
+    
+}
+
+.renderCard{
+    display: flex;
+    width: 60%;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.orderInfo h6{
+  font-family: "NotoSansCJKtc";
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f3a3a;
+}
+
+.renderCard h6{
+   font-family: "NotoSansCJKtc";
+   font-size: 16px;
+   font-weight: bold;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: left;
+   color: #3f3a3a;  
+   width: 20%;
+}
+
+.orderName, .orderPhone, .orderAddress, .orderMail{
+   display: flex;
+   align-items: center;
+   margin-top: 25px;
+   margin-bottom: 30px;
+}
+
+.orderName{
+    /* width: 60%; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-end; */
+}
+
+.enterName, .enterPhone, .enterAddress, .enterMail{
+  width: 450px;
+  height: 30px;
+  border-radius: 8px;
+  border: solid 1px #979797;
+  background-color: #ffffff;
+  margin-left: 55px;
+}
+
+.orderPhone p, .orderAddress p, .deliveryTime p, .orderMail p{
+    margin-right: 46px;
+}
+
+.deliveryTime{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.receiving-time{
+    margin-right: 30px;
+}
+
+.time-1, .time-2{
+    margin-right: 30px;
+}
+
+.feeCount{
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 75%;
+    align-items:center;
+}
+
+.feeTotal, .feeDeliver, .feePay{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.feeLine{
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #3f3a3a;
+    margin-bottom: 20px;
+}
+
+.feeItem{
+    width: 40%;
+}
+
+.payFee{
+    /* margin-right: 30%; */
+    width: 40%;
+}
+
+.feeNumTotal, .feeNumDelivery, .feeNumSum{
+    width: 67px;
+    /* height: 36px; */
+    font-family: "NotoSansCJKtc";
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #3f3a3a;
+}
+
+.confirmPay{
+    width: 100%;
+    height: 60px;
+    border: solid 1px #979797;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+.deliveryFee{   
+    /* margin-right: 44%; */
+    width: 40%;
+}
+
+.orderNotice{
+    /* width: 352px; */
+    height: 19px;
+    font-family: "NotoSansCJKtc";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8b572a;
+    margin-top: 10px;
+    display: flex;
+    justify-content:flex-end;
+    margin-left: 22%;
+}
+
+.emptyCart{
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.deleteIcon{
+        cursor: pointer;
+    }
+
+
+.tpfield {
+        padding: 5px;
+        width: 450px;
+        height: 25px;
+        border-radius: 8px;
+        border: solid 1px #979797;
+        background-color: #ffffff;
+        margin-left: 5%;
+    }
+
+.wrapCard{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1000px){
+    .cartTitleAll{
+        margin-top: 0px;
+    }
+
+    .cartTitle{
+        display: none;
+    }
+
+    .shoppingItem{
+        flex-wrap: wrap;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        position: relative;
+    }
+
+    .listMain{
+        border: none;
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-top: 10px;
+        border-top: 1px solid #313538;
+    }
+
+    .itemInfo{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .itemDetail{
+        height: 90%;
+    }
+
+    .itemDetail1{
+        height: 40%;
+    }
+    
+    .itemQty, .itemPrice, .itemSubtotal{
+        width: 20%;
+        flex-wrap: wrap;
+        margin-left: 13%;
+    }
+    
+    .itemDelete{
+        width: 0%;
+        margin-left: 0%;
+        align-items: flex-start;
+    }
+
+    .deleteIcon{
+        position: absolute;
+        top: 0;
+        right: -30px;       
+    }
+
+    /* 有功能的東西不要寫死 */
+    /* .qty1, .itemPrice, .itemSubtotal{
+        display: none;
+    } */
+    
+    .itemPic{
+        width: 40%;
+        height: 90%;
+    }
+
+    .mobileItem {
+        display: inline-flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .mobileItemDtails{
+        margin-left: 10px;
+        margin-top: 12px;
+    }
+
+    .delivery{
+        justify-content: center;
+        justify-content: space-around;
+        padding-right: 0px;
+    }
+
+    .deliveryTime{
+        flex-wrap: wrap;
+    }
+
+    .deliveryTime p{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .delivery-1, .delivery-2{
+        width: 300px;
+    }
+
+    .sendCountry{
+        /* width: 100%; */
+        margin-bottom: 25px;
+    }
+
+    .paymentWay{
+        margin-left: 0px;
+    }
+
+    .enterName, .enterPhone, .enterAddress, .enterMail{
+        width: 60%;
+        height: 30px;
+        border-radius: 8px;
+        border: solid 1px #979797;
+        background-color: #ffffff;
+        margin-left: 30px;
+    }
+
+    .tpfield{
+        width: 60%;
+        height: 30px;
+        border-radius: 8px;
+        border: solid 1px #979797;
+        background-color: #ffffff;
+        margin-left: 30px;
+    }
+
+    .orderInfo{
+        display: block;
+        margin-top: 80px;
+    }
+
+    .renderCard{
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .orderNotice{
+        margin-left: 0%;
+    }
+
+    .feeCount{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .orderName, .orderPhone, .orderAddress, .orderMail{
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 768px){
+    .container{
+        border-bottom: none;
+    }
+
+    .orderPhone p, .orderAddress p, .deliveryTime p, .orderMail p{
+        margin-right: 40px;
+    }
+
+    .delivery-1, .delivery-2{
+        width: 240px;
+    }
+
+    .time-1, .time-2{
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 576px){
+
+    .delivery-1, .delivery-2{
+        width: 160px;
+    }
+}
+
+@media (max-width: 476px){
+    .delivery-1, .delivery-2{
+        width: 100px;
+    }
+
+    .enterName, .enterPhone, .enterAddress, .enterMail{
+        width: 40%;
+        margin-left: 0px;
+    }
+
+    .tpfield{
+        width: 40%;
+        margin-left: 0px;
+    }
+}
+
