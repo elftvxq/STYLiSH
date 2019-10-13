@@ -1,10 +1,9 @@
 # STYLiSH
-![STYLiSH E-Commerce Site](https://upload.cc/i1/2019/10/13/Rx841r.png)
-
 Fashion E-commerce Websites integrated with TapPay payment service and Facebook login.
 User can search for the keyword to find the specific product and add to the shopping cart.
 If the product runs out of the stock, it will be locked and can't be selected.
 The product data fecth external backend API by AJAX.
+![STYLiSH E-Commerce Site](https://upload.cc/i1/2019/10/13/Rx841r.png)
 
 ## website demo link
 https://elftvxq.github.io/Web-Front-End-2019-Summer/students/emma/stylish/index.html
