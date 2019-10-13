@@ -25,6 +25,13 @@ https://elftvxq.github.io/Web-Front-End-2019-Summer/students/emma/stylish/index.
 Enter keyword to query substrings for searching the products
 ![Search result](https://upload.cc/i1/2019/10/13/boKrVF.jpg)
 
+### Add product to the shopping cart
+The system reminds the user if there is only one product left.
+User can't select the product that is no stock.
+![add product](https://upload.cc/i1/2019/10/13/gwVIdN.jpg)
+![no sotck](https://upload.cc/i1/2019/10/13/lmEC8e.jpg)
+
+
 ### Carousel slider of marketing information
 There are three main images rotating to promote different marketing campaigns.
 ![Carousrl images](https://upload.cc/i1/2019/10/13/EM4liu.jpg)
