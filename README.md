@@ -52,7 +52,7 @@ There are three main images rotating to promote different marketing campaigns.
 
 ### Infinite scrolling
 Show six products at first, when user scroll down, other products will display as following
-![infinite scroll](https://upload.cc/i1/2019/10/13/W7ySvG.jpg)
+![infinite scroll](https://upload.cc/i1/2019/10/13/sMd1lw.jpg)
 
 
 ### Login with Facebook 
