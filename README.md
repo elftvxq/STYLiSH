@@ -17,3 +17,18 @@ https://elftvxq.github.io/Web-Front-End-2019-Summer/students/emma/stylish/index.
  * Integrated credit card payment service with TapPay SDK
  * RWD version of the site is equally displayed on mobile
  * Compiled carousel slider and infinite scrolling
+
+
+## Features
+
+### Search for keyword and display result
+Enter keyword to query substrings for searching the products
+![Search result](https://upload.cc/i1/2019/10/13/boKrVF.jpg)
+
+### Carousel slider of marketing information
+There are three main images rotating to promote different marketing campaigns.
+![Carousrl images](https://upload.cc/i1/2019/10/13/EM4liu.jpg)
+
+### Login with Facebook 
+Users can login by Facebook Auth.
+![Login Screenshot](https://upload.cc/i1/2019/10/13/zG3khi.jpg)
