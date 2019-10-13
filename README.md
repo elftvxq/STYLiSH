@@ -23,7 +23,7 @@ https://elftvxq.github.io/Web-Front-End-2019-Summer/students/emma/stylish/index.
 
 ### Search for keyword and display result
 Enter keyword to query substrings for searching the products
-![Search result](https://upload.cc/i1/2019/10/13/boKrVF.jpg)
+![Search result](https://upload.cc/i1/2019/10/13/ERS3WK.jpg)
 
 ### Add product to the shopping cart
 The system reminds the user if there is only one product left.
@@ -31,6 +31,15 @@ User can't select the product that is no stock.
 ![add product](https://upload.cc/i1/2019/10/13/gwVIdN.jpg)
 ![no sotck](https://upload.cc/i1/2019/10/13/lmEC8e.jpg)
 
+### Track shopping carts status with LocalStorage
+Once user add products to the shopping carts, even user close the page, the products will be remembered.
+![shopping cart](https://upload.cc/i1/2019/10/13/TA5DLc.jpg)
+
+### Check out by credit card payment service with TapPay SDK
+User can pay by TapPay finance service. 
+If all checkout information is validate and check out successfully, user will receive the order number.
+![TapPay SDK](https://upload.cc/i1/2019/10/13/TodauC.jpg)
+![order number](https://upload.cc/i1/2019/10/13/W7ySvG.jpg)
 
 ### Carousel slider of marketing information
 There are three main images rotating to promote different marketing campaigns.
