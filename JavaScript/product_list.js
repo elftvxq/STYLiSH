@@ -84,20 +84,6 @@ if (!originParam) {
 console.log(categ);
 
 
-// if (prodoductParams.search !== "") {
-//     for (let pair of ProParam.entries()) {
-//         console.log(`key: ${pair[0]}, value: ${pair[1]}`)
-//         var categorySwitch = pair[1];
-//     } 
-// }
-
-// if (prodoductParams.search === null) {
-//     categ = all,
-//     } else {
-//     categ = categorySwitch;     
-// }
-
-
 //點擊或是按鈕執行搜尋，弄懂render在這裡的意義>"<
 let webSearchInput = document.querySelector('.webSearchInput');
 webSearchInput.addEventListener('keypress', function(e){
@@ -155,7 +141,7 @@ function ajaxMore() {
     // console.log(windowHeight);
     // console.log(footerTop);
 
-    //如果滾輪來到接近底部ㄝ，且loading狀態打開
+    //如果滾輪來到接近底部，且loading狀態打開
     //判斷有沒有下一頁
     if (windowHeight > footerTop && !loading) {
         if (productPaging) {
@@ -200,105 +186,6 @@ function renderMore(moreInfo) {
 }
 
 
-// 網頁版切換產品類別
-
-
-// 事件執行，再執行ajax函式，categ寫上各個產品類別
-// let CateWomen = document.getElementById('CateWomen');
-// CateWomen.addEventListener('click', () => {
-    
-    
-//     // categ = "women";
-//     ajax(`${apiURL}${categorySwitch}`, function (response) {
-//     render(response);})
-//     // window.location.href = "./products/women";
-// });
-
-
-// let CateMen = document.getElementById('CateMen');
-// CateMen.addEventListener('click', () => {
-//     categ = "men";
-//     ajax(`${apiURL}${categ}`, function (response) {
-//         render(response);
-//     })
-// });
-
-// let CateAccessories = document.getElementById('CateAccessories');
-// CateAccessories.addEventListener('click', () => {
-//     categ = "accessories";
-//     ajax(`${apiURL}${categ}`, function (response) {
-//         render(response);
-//     })
-// });
-
-
-// // 手機版切換產品類別
-// let MoCateWomen = document.getElementById('MoCateWomen');
-// MoCateWomen.addEventListener('click', () => {
-//     categ = "women";
-//     ajax(`${apiURL}${categ}`, function (response) {
-//         render(response);
-//     })
-// });
-
-// let MoCateMen = document.getElementById('MoCateMen');
-// MoCateMen.addEventListener('click', () => {
-//     categ = "men";
-//     ajax(`${apiURL}${categ}`, function (response) {
-//         render(response);
-//     })
-// });
-
-// let MoCateAccessories = document.getElementById('MoCateAccessories');
-// MoCateAccessories.addEventListener('click', () => {
-//     categ = "accessories";
-//     ajax(`${apiURL}${categ}`, function (response) {
-//         render(response);
-//     })
-// });
-
-// //點擊logo回到出現所有產品類別
-// let CateAll = document.querySelector('.logo');
-// CateAll.addEventListener('click', () => {
-//     categ = "all";
-//     ajax(`${apiURL}${categ}`, function (response) {
-//         render(response);
-//     })
-// });
-
-
-//監聽滾輪視窗的位置
-// innerHeighht:視窗內可讀範圍的高度
-// window.screenY: 距離螢幕頂部的像素值
-
-
-// var last_known_scroll_position = 0;
-// var ticking = false;
-
-
-// window.addEventListener('scroll', function (e) {
-//     last_known_scroll_position = window.scrollY;
-//      //視窗高度 //const windowHeight = window.innerHeight
-//     // const bottomArea = document.querySelector('footer').getBoundingClientRect()
-//     // const footTotop = bottomArea.top //footer至頂端高度
-
-//     if (!ticking) {
-//         window.requestAnimationFrame(function () {
-//             getHeight();
-//             ticking = false;
-//         });
-//     }
-//     ticking = true;
-// });
-
-// function getHeight(){
-//     const windowHeight = document.documentElement.clientHeight;
-//     const footerTop = document.getElementsByClassName('footer')[0].getBoundingClientRect().bottom;
-//     console.log(windowHeight);
-//     console.log(footerTop);
-// }
-
-
 //Part.5 Get marketing campaign
 
 function getData(src, callback) {
@@ -316,19 +203,6 @@ function getData(src, callback) {
     campaign.send();
 }
 
-
-/* <div class="banner">
-        <div class="backgroundImage"> <img class="" src="">
-            <div class="bannerTitle">
-            <h2>於是
-                <br>
-                我也想要給你
-                <br>
-            一個那麼美好的自己 </h2>
-                <p>不朽《與自己和好如初》</p>
-            </div>
-        </div>    
-    </div> */
 
 
 function renderBanner(campaignBanner) {
